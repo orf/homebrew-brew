@@ -15,3 +15,7 @@ jobs:
         shell: bash
         run: |
           brew tap local/local file://$(pwd)
+      - name: Install
+        shell: bash
+        run: |
+          brew install git-workspace
