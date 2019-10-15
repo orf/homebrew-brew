@@ -3,7 +3,20 @@ on: [push]
 name: CI
 
 jobs:
-  test:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: add
+        shell: bash
+        run: |
+          brew tap .
+          brew update
+      - name: install
+        shell: bash
+        run: |
+          brew install git-workspace
+  audit:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@master
