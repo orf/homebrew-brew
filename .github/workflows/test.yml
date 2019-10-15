@@ -28,18 +28,12 @@ jobs:
         run: |
           brew install git-workspace
   audit:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
+    container:
+      image: linuxbrew/brew
     steps:
       - uses: actions/checkout@master
       - name: Audit
         shell: bash
         run: |
           brew audit --strict *.rb
-      - name: Update
-        shell: bash
-        run: |
-          brew tap local/local file://$(pwd)
-      - name: Install
-        shell: bash
-        run: |
-          brew install git-workspace
