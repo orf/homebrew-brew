@@ -12,7 +12,6 @@ jobs:
       - name: add
         run: |
           brew tap orf/homebrew-brew file://${GITHUB_WORKSPACE}
-          brew update
       - name: install
         run: |
           brew install git-workspace
@@ -24,7 +23,6 @@ jobs:
         shell: bash
         run: |
           brew tap orf/homebrew-brew file://${GITHUB_WORKSPACE}
-          brew update
       - name: install
         shell: bash
         run: |
