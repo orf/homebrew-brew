@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@master
       - name: add
         run: |
-          brew tap orf/homebrew-brew file://.
+          brew tap orf/homebrew-brew file://${GITHUB_WORKSPACE}
           brew update
       - name: install
         run: |
@@ -23,7 +23,7 @@ jobs:
       - name: add
         shell: bash
         run: |
-          brew tap orf/homebrew-brew file://.
+          brew tap orf/homebrew-brew file://${GITHUB_WORKSPACE}
           brew update
       - name: install
         shell: bash
