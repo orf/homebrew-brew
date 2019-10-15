@@ -3,6 +3,21 @@ on: [push]
 name: CI
 
 jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: add
+        shell: bash
+        uses: docker://linuxbrew/brew
+        run: |
+          brew tap .
+          brew update
+      - name: install
+        shell: bash
+        uses: docker://linuxbrew/brew
+        run: |
+          brew install git-workspace
   macos:
     runs-on: macos-latest
     steps:
