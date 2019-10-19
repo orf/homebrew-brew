@@ -8,7 +8,7 @@ class GitWorkspace < Formula
     url "https://github.com/orf/git-workspace/releases/download/v0.1.10/git-workspace-Linux-x86_64.tar.gz"
     sha256 "e25095c5dddeef5136834f5b3171ccea125410bd6a4869eac4d61d3dbf05679d"
   end
-  version "0.1.9"
+  version "0.1.10"
 
   depends_on "git-lfs"
 
