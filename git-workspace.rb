@@ -8,7 +8,7 @@ class GitWorkspace < Formula
     url "https://github.com/orf/git-workspace/releases/download/v0.2.2/git-workspace-Linux-x86_64.tar.gz"
     sha256 "c3073a75b6e87b8817ed5e1aaef357ebd296e7ff77522249f7f5e7baeb11a62e"
   end
-  version "0.2.0"
+  version "0.2.2"
 
   def install
     bin.install "git-workspace"
