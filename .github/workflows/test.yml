@@ -3,8 +3,13 @@ on: [push]
 name: CI
 
 jobs:
-  linux:
-    runs-on: ubuntu-latest
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        installable: [git-workspace, ptail]
+    runs-on: ${{ matrix.os }}
     container:
       image: linuxbrew/brew
     steps:
@@ -14,19 +19,7 @@ jobs:
           brew tap orf/homebrew-brew file://${GITHUB_WORKSPACE}
       - name: install
         run: |
-          brew install git-workspace
-  macos:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: add
-        shell: bash
-        run: |
-          brew tap orf/homebrew-brew file://${GITHUB_WORKSPACE}
-      - name: install
-        shell: bash
-        run: |
-          brew install git-workspace
+          brew install ${{ matrix.installable }}
   audit:
     runs-on: ubuntu-latest
     container:
