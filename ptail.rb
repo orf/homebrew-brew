@@ -2,13 +2,13 @@ class Ptail < Formula
   desc "Stream and display a fixed number of lines from a processes output"
   homepage "https://github.com/orf/ptail"
   if OS.mac?
-    url "https://github.com/orf/ptail/releases/download/v0.2.0/ptail-Darwin-x86_64.tar.gz"
-    sha256 "c8baa911c20b8716b6c767303dee444aabca7bb8ee6ab61af8cf5809fdd0e53d"
+    url "https://github.com/orf/ptail/releases/download/v0.2.1/ptail-Darwin-x86_64.tar.gz"
+    sha256 "5eb20bf0070fc54a25cfc5b7e1cb4fb32272dd7bd5da4021a0b9c01ce45e6c3d"
   elsif OS.linux?
-    url "https://github.com/orf/ptail/releases/download/v0.2.0/ptail-Linux-x86_64.tar.gz"
-    sha256 "fbd3f718721bc9c15efdab9669ddbcc23976cc3165ca3820c9efbd2e91e3626a"
+    url "https://github.com/orf/ptail/releases/download/v0.2.1/ptail-Linux-x86_64.tar.gz"
+    sha256 "2cd9f27a7c0af40eb997a413bdca3833275490debde641799d5733130af13bbf"
   end
-  version "0.2.0"
+  version "0.2.1"
 
   def install
     bin.install "ptail"
