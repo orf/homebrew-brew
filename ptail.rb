@@ -1,5 +1,5 @@
 class Ptail < Formula
-  desc "Stream and display a fixed number of lines from a processes output."
+  desc "Stream and display a fixed number of lines from a processes output"
   homepage "https://github.com/orf/ptail"
   if OS.mac?
     url "https://github.com/orf/ptail/releases/download/v0.2.0/ptail-Darwin-x86_64.tar.gz"
