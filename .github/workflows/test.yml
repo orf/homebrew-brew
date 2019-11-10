@@ -10,7 +10,7 @@ jobs:
         installable: [git-workspace, ptail]
     runs-on: ubuntu-latest
     container:
-      image: linuxbrew/brew
+      image: linuxbrew/brew:latest
     steps:
       - uses: actions/checkout@master
       - name: add
