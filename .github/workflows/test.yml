@@ -3,15 +3,28 @@ on: [push]
 name: CI
 
 jobs:
-  install:
+  ubuntu:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest]
         installable: [git-workspace, ptail]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     container:
       image: linuxbrew/brew
+    steps:
+      - uses: actions/checkout@master
+      - name: add
+        run: |
+          brew tap orf/homebrew-brew file://${GITHUB_WORKSPACE}
+      - name: install
+        run: |
+          brew install ${{ matrix.installable }}
+  macOS:
+    strategy:
+      fail-fast: false
+      matrix:
+        installable: [git-workspace, ptail]
+    runs-on: macOS-latest
     steps:
       - uses: actions/checkout@master
       - name: add

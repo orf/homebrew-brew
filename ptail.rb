@@ -1,4 +1,4 @@
-class GitWorkspace < Formula
+class Ptail < Formula
   desc "Stream and display a fixed number of lines from a processes output."
   homepage "https://github.com/orf/ptail"
   if OS.mac?
