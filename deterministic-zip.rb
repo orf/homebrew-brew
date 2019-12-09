@@ -1,5 +1,5 @@
 class DeterministicZip < Formula
-  desc "Deterministic zipfiles, with Rust "
+  desc "Deterministic zipfiles, with Rust"
   homepage "https://github.com/orf/deterministic-zip"
   if OS.mac?
     url "https://github.com/orf/deterministic-zip/releases/download/v0.0.1/deterministic-zip-Darwin-x86_64.tar.gz"
