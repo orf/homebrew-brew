@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        installable: [git-workspace, ptail]
+        installable: [git-workspace, ptail, deterministic-zip]
     runs-on: ubuntu-latest
     container:
       image: linuxbrew/brew:latest
@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        installable: [git-workspace, ptail]
+        installable: [git-workspace, ptail, deterministic-zip]
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@master
