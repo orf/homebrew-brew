@@ -3,12 +3,12 @@ class DeterministicZip < Formula
   homepage "https://github.com/orf/deterministic-zip"
   if OS.mac?
     url "https://github.com/orf/deterministic-zip/releases/download/v0.0.1/deterministic-zip-Darwin-x86_64.tar.gz"
-    sha256 "250c6908991caca707e8d55abf5232111c9af1655e49a4c38e49f04b5c7571f5"
+    sha256 "e35a9b44bddd3df02115d786159fea3a8ecea3354a9e580644d6b1968ce861bf"
   elsif OS.linux?
     url "https://github.com/orf/deterministic-zip/releases/download/v0.0.1/deterministic-zip-Linux-x86_64.tar.gz"
-    sha256 "a8553f8239714ea5ef78123a9273923b360d0d15298cba0b1cfd8a68d217305e"
+    sha256 "c261748892bbf7d0cb7add9a814cf9792cfd8c00272b8630d3233f0186452dd3"
   end
-  version "0.0.1"
+  version "0.0.3"
 
   def install
     bin.install "deterministic-zip"
