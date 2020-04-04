@@ -1,4 +1,4 @@
-class Ptail < Formula
+class Dirscan < Formula
   desc "A high performance tool for summarizing large directories or drives"
   homepage "https://github.com/orf/ptail"
   if OS.mac?
