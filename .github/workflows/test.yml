@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        installable: [git-workspace, ptail, deterministic-zip]
+        installable: [git-workspace, ptail, deterministic-zip, dirscan]
     runs-on: ubuntu-latest
     container:
       image: linuxbrew/brew:latest
