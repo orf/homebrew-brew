@@ -1,5 +1,5 @@
 class Dirscan < Formula
-  desc "A high performance tool for summarizing large directories or drives"
+  desc "Analyse large drives or directories for insights, fast"
   homepage "https://github.com/orf/ptail"
   if OS.mac?
     url "https://github.com/orf/dirscan/releases/download/v0.1.1/dirscan-Darwin-x86_64.tar.gz"
