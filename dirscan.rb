@@ -2,13 +2,13 @@ class Dirscan < Formula
   desc "Analyse large drives or directories for insights, fast"
   homepage "https://github.com/orf/ptail"
   if OS.mac?
-    url "https://github.com/orf/dirscan/releases/download/v0.1.1/dirscan-Darwin-x86_64.tar.gz"
-    sha256 "b954a9d9a7bf1574fb73468221d7bbb54af36bf94c857bbb9dbf0d2adb765564"
+    url "https://github.com/orf/dirscan/releases/download/v0.2.0/dirscan-Darwin-x86_64.tar.gz"
+    sha256 "97f9170fa7fc1b3e9fdd72b11c200f4801ecfb7ec5af5198c998d5dbc046ca18"
   elsif OS.linux?
-    url "https://github.com/orf/dirscan/releases/download/v0.1.1/dirscan-Linux-x86_64.tar.gz"
-    sha256 "e3d0f389f0a5ee8197bda2b6c8fcc3705382d3ea527961780778270a3915b457"
+    url "https://github.com/orf/dirscan/releases/download/v0.2.0/dirscan-Linux-x86_64.tar.gz"
+    sha256 "c8bacb27c5ea4a1fd43907323bdd6f67bff4f29b2e3e3ce10f553378bcb9b516"
   end
-  version "0.1.1"
+  version "0.2.0"
 
   def install
     bin.install "dirscan"
