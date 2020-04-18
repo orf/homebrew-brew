@@ -3,10 +3,10 @@ class Dirscan < Formula
   homepage "https://github.com/orf/ptail"
   if OS.mac?
     url "https://github.com/orf/dirscan/releases/download/v0.3.0/dirscan-Darwin-x86_64.tar.gz"
-    sha256 "3b35fcaf6482fc3be134bfb9d20f719969420ca85406a9db99a500b1e4cb4600"
+    sha256 "84b242b051eceaff6997b6402bb1a1d92a5f2809b4f1e2a3fa1b358849f3f232"
   elsif OS.linux?
     url "https://github.com/orf/dirscan/releases/download/v0.3.0/dirscan-Linux-x86_64.tar.gz"
-    sha256 "ade06c671c654aa75a006ce233bb0ce89258d053c9c78ddae212207e89718624"
+    sha256 "eb69ff33d8473654bac102fdbc0003a9ec4d22b80c3a66c2c708b82473450e72"
   end
   version "0.3.0"
 
