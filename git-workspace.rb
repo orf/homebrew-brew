@@ -2,13 +2,13 @@ class GitWorkspace < Formula
   desc "Mirror your local git repositories from multiple providers"
   homepage "https://github.com/orf/git-workspace"
   if OS.mac?
-    url "https://github.com/orf/git-workspace/releases/download/v0.5.1/git-workspace-Darwin-x86_64.tar.gz"
-    sha256 "1c62f3558bbd34a06799de35954fcce9c07a4f574c71e9822fb5c78fe5fea72f"
+    url "https://github.com/orf/git-workspace/releases/download/v0.6.0/git-workspace-Darwin-x86_64.tar.gz"
+    sha256 "0343e5a41cb50a21a1875f2a9e26d7812062cbca6bdec3535a47d45e150b5383"
   elsif OS.linux?
-    url "https://github.com/orf/git-workspace/releases/download/v0.5.1/git-workspace-Linux-x86_64.tar.gz"
-    sha256 "aa5c84862d87998f21be538cc42edf15194f7a0124249518df91ddf188c4d24e"
+    url "https://github.com/orf/git-workspace/releases/download/v0.6.0/git-workspace-Linux-x86_64.tar.gz"
+    sha256 "56d0840fa9562a8be59c31e26e106a18be1dcd15ebc928a56c31c3953149e3a6"
   end
-  version "0.5.1"
+  version "0.6.0"
 
   def install
     bin.install "git-workspace"
