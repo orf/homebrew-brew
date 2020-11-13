@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        installable: [git-workspace, ptail, deterministic-zip, dirscan]
+        installable: [git-workspace, ptail, deterministic-zip, dirscan, gping]
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@master
