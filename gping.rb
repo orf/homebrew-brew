@@ -1,4 +1,4 @@
-class GPing < Formula
+class Gping < Formula
   desc "Ping, but with a graph."
   homepage "https://github.com/orf/gping"
   if OS.mac?
