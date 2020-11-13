@@ -2,13 +2,13 @@ class Gping < Formula
   desc "Ping, but with a graph."
   homepage "https://github.com/orf/gping"
   if OS.mac?
-    url "https://github.com/orf/gping/releases/download/v0.1.1/gping-Darwin-x86_64.tar.gz"
-    sha256 "8c36f649920d1d0656cbb0be29124660a6d258569400b87fa6c580f327cb98c9"
+    url "https://github.com/orf/gping/releases/download/v0.1.4/gping-Darwin-x86_64.tar.gz"
+    sha256 "696fa1da20c07ff6480769bd65dad8ab10372864d7bbcc8c33a24ce23bfd2d52"
   elsif OS.linux?
-    url "https://github.com/orf/gping/releases/download/v0.1.1/gping-Linux-x86_64.tar.gz"
-    sha256 "ef99e801d921b4f5932709a987dcd691057fe973b823dce42ec752247ff25570"
+    url "https://github.com/orf/gping/releases/download/v0.1.4/gping-Linux-x86_64.tar.gz"
+    sha256 "b0329e7affbb58445e3dd5a6e31d66f7dcbe81eadaf134bd0e75ba89c9026214"
   end
-  version "0.1.1"
+  version "0.1.4"
 
   def install
     bin.install "gping"
