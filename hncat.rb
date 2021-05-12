@@ -1,4 +1,4 @@
-class HnCat < Formula
+class Hncat < Formula
   desc "Grab all Hacker News stores + comments, quickly. "
   homepage "https://github.com/orf/hncat"
   if OS.mac?
